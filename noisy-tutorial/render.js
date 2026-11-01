@@ -19,15 +19,18 @@ const FPS = 30, DUR = 45;
     }
     return b.close();
   }
-  // audio: music+sfx always; voiceover mixed in if assets/voiceover.* exists
+  // audio: music + sfx stems; if a voiceover exists the MUSIC is automatically ducked (sidechain) while the voice speaks
   const a = path.resolve(__dirname, 'assets');
-  const vo = ['voiceover.mp3', 'voiceover.wav', 'voiceover.m4a'].map(f => path.join(a, f)).find(fs.existsSync);
+  const vo = ['voiceover.wav', 'voiceover.mp3', 'voiceover.m4a'].map(f => path.join(a, f)).find(fs.existsSync);
   const ff = ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-',
-    '-i', path.join(a, 'music_sfx.wav')];
+    '-i', path.join(a, 'music_only.wav'), '-i', path.join(a, 'sfx_only.wav')];
   let fc;
   if (vo) { ff.push('-i', vo);
-    fc = '[1:a]volume=0.55[m];[2:a]apad,volume=1.6[v];[m][v]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]'; }
-  else fc = '[1:a]volume=1.0[a]';
+    fc = '[3:a]apad,asplit=2[vo][key];' +
+         '[1:a]volume=0.8[mus];[mus][key]sidechaincompress=threshold=0.02:ratio=3.5:attack=40:release=900:makeup=1[duck];' +
+         '[2:a]volume=0.8[sfx];[vo]volume=1.0[v];' +
+         '[duck][sfx][v]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.95[a]'; }
+  else fc = '[1:a][2:a]amix=inputs=2:duration=first:normalize=0[a]';
   ff.push('-filter_complex', fc, '-map', '0:v', '-map', '[a]', '-t', String(DUR), '-r', String(FPS),
     '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', out);
   const f = spawn('ffmpeg', ff, { stdio: ['pipe', 'inherit', 'inherit'] });

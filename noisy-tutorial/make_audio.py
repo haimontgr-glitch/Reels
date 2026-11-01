@@ -36,7 +36,7 @@ for b in range(int(DUR/bar)+1):
         h=np.diff(h,prepend=0); add(h*.05,st+k*beat+beat/2,0,1)
 # gentle fade in/out
 fade=np.minimum(1,np.minimum(t/1.5,(DUR-t)/2.0)); L*=fade; R*=fade
-mus=.9
+ML,MR=L.copy(),R.copy(); L[:]=0; R[:]=0   # music is kept apart from the sfx so only music is ducked under the voice
 
 # ---- sfx ----
 def whoosh(dur=.7):
@@ -64,9 +64,11 @@ for at in (5.6,10.5,18.5,20.2,25.8,29.4): add(tap(),at,0,.9)
 for i in range(6): add(tick(),26.8+.27*i,0,1)
 add(chime(),30.2,0,.9)
 add(chime()[:int(1.2*SR)],35.9,0,.35)      # soft chime when the end-card code appears
-# normalise
-peak=max(np.max(np.abs(L)),np.max(np.abs(R)));L/=peak/.85;R/=peak/.85
-pcm=(np.stack([L,R],1)*32767).astype('<i2')
-with wave.open('assets/music_sfx.wav','wb') as w:
-    w.setnchannels(2);w.setsampwidth(2);w.setframerate(SR);w.writeframes(pcm.tobytes())
-print('wrote assets/music_sfx.wav')
+# normalise (same scale for both stems so their balance is unchanged)
+peak=max(np.max(np.abs(L+ML)),np.max(np.abs(R+MR)));k=.85/peak
+def save(name,l,r):
+    pcm=(np.stack([l*k,r*k],1)*32767).astype('<i2')
+    with wave.open(name,'wb') as w:
+        w.setnchannels(2);w.setsampwidth(2);w.setframerate(SR);w.writeframes(pcm.tobytes())
+save('assets/music_only.wav',ML,MR);save('assets/sfx_only.wav',L,R);save('assets/music_sfx.wav',L+ML,R+MR)
+print('wrote assets/music_only.wav, sfx_only.wav, music_sfx.wav')

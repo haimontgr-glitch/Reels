@@ -37,3 +37,11 @@ Devanagari font: Noto Sans Devanagari (`apt-get install fonts-noto-core`).
 Screens are mockups rebuilt from your screenshots. The sign-up form, Referrals page, "Enter Referral Code" sheet and
 confirmation banner all exist on the real site per your screenshots. Personal data (email, username, own code) is
 replaced with placeholders. The video never promises earnings; the end card says rewards may change and are not guaranteed.
+
+## Nepali voiceover (ElevenLabs) – how it was added
+- Source recording: `assets/nepali_voice_source.mp3` (one 37.96 s file).
+- `build_voiceover.py` cuts it at its natural pauses and places each phrase at its scene/subtitle start → `assets/voiceover.wav`
+  (tiny 5 % speed-up on scene 5 only so it ends exactly with its subtitle at 32.9 s; voice levelled to about -15 LUFS).
+- `make_audio.py` now writes the music (`music_only.wav`) and sound effects (`sfx_only.wav`) separately.
+- `render.js` ducks only the music (sidechain) while the voice speaks, then exports `../videos/noisy_tutorial_final.mp4`.
+Re-run: `python3 build_voiceover.py && node render.js ../videos/noisy_tutorial_final.mp4`
