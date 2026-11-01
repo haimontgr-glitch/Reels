@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Noisy.la referral code tutorial (1080x1920)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#000;width:100%;height:100%;overflow:hidden}
+body{font-family:'DM Sans','Noto Sans','Noto Sans Devanagari',sans-serif;color:#fff}
+.ne{font-family:'Noto Sans Devanagari','Noto Sans',sans-serif}
+#fit{position:absolute;left:0;top:0;transform-origin:0 0}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a0e13}
+#bg{position:absolute;inset:0;background:radial-gradient(900px 700px at 20% 15%,#14392e 0%,transparent 60%),radial-gradient(900px 800px at 90% 85%,#1b2450 0%,transparent 60%),#0a0e13}
+#bars{position:absolute;left:0;right:0;bottom:0;height:420px;display:flex;align-items:flex-end;gap:10px;padding:0 20px;opacity:.16}
+#bars i{flex:1;background:#3be0a8;border-radius:8px 8px 0 0}
+.logo{display:inline-flex;align-items:center;font-weight:800;letter-spacing:-.03em;line-height:1}
+.logo i{display:inline-block;width:.78em;height:.78em;border:.17em solid #fff;border-radius:50%;margin:0 .02em;position:relative}
+.logo i:after{content:"";position:absolute;inset:.1em;border-radius:50%;background:#fff}
+#logo{position:absolute;left:0;width:1080px;text-align:center;transform-origin:50% 50%}
+#logo .logo{font-size:110px}
+.hook{position:absolute;left:60px;width:960px;text-align:center;font-weight:800;line-height:1.1}
+#hook1{top:760px;font-size:112px}
+#hook2{top:1130px;font-size:64px;color:#3be0a8}
+#tag{position:absolute;left:0;width:1080px;top:1330px;text-align:center;font-size:40px;color:#aab3c0;letter-spacing:.2em;text-transform:uppercase}
+#chip{position:absolute;left:0;width:1080px;top:150px;text-align:center}
+#chip span{display:inline-flex;align-items:center;gap:18px;background:#3be0a8;color:#04140d;font-weight:800;font-size:44px;padding:14px 38px;border-radius:60px}
+#chip b{background:#04140d;color:#3be0a8;border-radius:50%;width:56px;height:56px;display:inline-flex;align-items:center;justify-content:center;font-size:36px}
+#phone{position:absolute;left:160px;top:250px;width:760px;height:1260px;border-radius:64px;overflow:hidden;background:#17181c;box-shadow:0 0 0 10px #262932,0 40px 120px rgba(0,0,0,.65),0 0 160px rgba(59,224,168,.12)}
+#screen{position:absolute;left:0;top:0;width:923px;height:1530px;transform:scale(.8235);transform-origin:0 0;overflow:hidden;background:#17181c}
+#cam{position:absolute;left:0;top:0;width:923px;height:1530px;transform-origin:0 0}
+#bar{position:absolute;left:0;top:0;width:923px;height:100px;background:#0e0e10;z-index:50}
+#pill{position:absolute;left:92px;top:12px;width:546px;height:76px;border-radius:40px;background:#2b2d33;font-size:34px;line-height:76px;padding-left:34px;color:#fff;white-space:nowrap;overflow:hidden}
+#pill u{text-decoration:none;color:#8d93a0}
+#bar .ic{position:absolute;top:26px;font-size:40px;color:#fff}
+#load{position:absolute;left:0;top:96px;height:5px;background:#3be0a8;width:0;z-index:51}
+#page{position:absolute;left:0;top:100px;width:923px;height:1430px;background:#202127}
+.pg{position:absolute;inset:0;background:#202127;overflow:hidden}
+.hdr{position:absolute;left:0;top:0;width:923px;height:108px}
+.hdr .burger{position:absolute;left:36px;top:38px;width:34px;height:34px;border:3px solid #aaa;border-radius:6px}
+.hdr .logo{position:absolute;left:108px;top:22px;font-size:72px}
+.btn{position:absolute;border-radius:14px;border:2px solid #4a4d57;font-weight:600;text-align:center;color:#e9e9ee}
+.btn.g{background:#aef0d3;color:#06261a;border-color:#aef0d3}
+h1.t{position:absolute;left:22px;top:118px;font-size:48px;font-weight:700}
+.sub{position:absolute;left:22px;top:178px;font-size:27px;color:#aeb2bd;font-weight:500}
+.hr{position:absolute;left:22px;right:22px;height:2px;background:#33353d}
+.card{position:absolute;left:22px;right:22px;height:225px;border-radius:30px;background:#2b2c33}
+.card .th{position:absolute;left:18px;top:18px;width:190px;height:190px;border-radius:20px}
+.card .th:after{content:"";position:absolute;left:68px;top:62px;border-left:56px solid #3be0a8;border-top:36px solid transparent;border-bottom:36px solid transparent;opacity:.9}
+.card h3{position:absolute;left:224px;top:14px;font-size:36px;font-weight:700}
+.card .ar{position:absolute;left:224px;top:62px;font-size:25px;color:#9ea3af;font-weight:500}
+.card .pr{position:absolute;left:224px;top:92px;font-size:56px;font-weight:700;color:#2fe0a0}
+.card .pr small{font-size:27px;color:#c9ccd5;font-weight:600}
+.card .lf{position:absolute;right:20px;top:106px;font-size:30px;font-weight:700}
+.card .lf small{font-size:24px;color:#9ea3af;font-weight:500}
+.card .pb{position:absolute;left:224px;right:20px;top:176px;height:8px;border-radius:5px;background:#3b3d46;overflow:hidden}
+.card .pb i{display:block;height:100%;background:#2fb67d}
+.card .mx{position:absolute;left:224px;top:190px;font-size:22px;font-weight:600;color:#c9ccd5}
+.card .bs{position:absolute;right:20px;top:190px;font-size:22px;font-weight:600;color:#d9a21b}
+.tag{position:absolute;top:18px;font-size:23px;padding:6px 14px;border-radius:12px;font-weight:600}
+.dim{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+#sheet,#modal{position:absolute;left:22px;right:22px;border-radius:44px 44px 0 0;background:#25262d;border-top:2px solid #34363f;z-index:20}
+#sheet{top:600px;height:830px}
+#modal{top:480px;height:950px}
+.grab{position:absolute;left:50%;top:14px;width:90px;height:8px;margin-left:-45px;border-radius:5px;background:#4a4d57}
+.sh-t{position:absolute;left:24px;font-size:40px;font-weight:700}
+.sh-s{position:absolute;left:24px;font-size:26px;font-weight:600;color:#d8dbe3}
+.lab{position:absolute;left:24px;font-size:26px;font-weight:600}
+.inp{position:absolute;left:24px;right:24px;height:66px;border-radius:14px;background:#1d1e24;color:#808593;font-size:28px;line-height:66px;padding-left:22px}
+.line{position:absolute;left:24px;right:24px;height:2px;background:#2d3a52}
+#side{position:absolute;left:0;top:0;width:430px;height:1430px;background:#25262d;z-index:30;border-right:2px solid #31333b}
+#side .logo{position:absolute;left:24px;top:22px;font-size:68px}
+#side .me{position:absolute;left:28px;top:150px;font-size:27px;font-weight:600}
+#side .me b{display:block;color:#3be0a8;font-size:28px;margin:8px 0}
+#side .me span{color:#aeb2bd;font-size:25px}
+.mi{position:absolute;left:16px;width:400px;height:86px;border-radius:14px;font-size:30px;font-weight:600;line-height:86px;padding-left:92px}
+.mi:before{content:"";position:absolute;left:28px;top:26px;width:36px;height:34px;border:3px solid #fff;border-radius:9px}
+.ring{position:absolute;border:6px solid #ffd60a;border-radius:24px;box-shadow:0 0 0 8px rgba(255,214,10,.2),0 0 40px rgba(255,214,10,.5);opacity:0;z-index:60;pointer-events:none}
+#cursor{position:absolute;left:0;top:0;width:70px;height:70px;margin:-35px 0 0 -35px;border-radius:50%;background:rgba(255,255,255,.35);border:4px solid #fff;z-index:70;opacity:0;box-shadow:0 6px 24px rgba(0,0,0,.5)}
+.rip{position:absolute;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;border:5px solid #3be0a8;z-index:69;opacity:0;pointer-events:none}
+#codebadge{position:absolute;left:150px;width:780px;top:1400px;text-align:center;z-index:5;opacity:0}
+#codebadge div{display:inline-block;background:#0f2a22;border:4px dashed #3be0a8;border-radius:32px;padding:20px 44px;box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 60px rgba(59,224,168,.25)}
+#codebadge small{display:block;font-size:30px;color:#9be9cb;font-weight:600;margin-bottom:4px}
+#codebadge b{font-family:'DejaVu Sans Mono',monospace;font-size:86px;letter-spacing:.14em;color:#3be0a8}
+#end{position:absolute;inset:0;opacity:0}
+#endbg{position:absolute;left:-170px;top:-40px;width:1420px;height:2000px;opacity:.12;filter:blur(7px);transform:scale(.62);transform-origin:50% 0}
+#end .c{position:absolute;left:0;width:1080px;text-align:center}
+#endlogo{top:300px}#endlogo .logo{font-size:150px}
+#endurl{top:500px;font-size:96px;font-weight:800;color:#3be0a8}
+#endcode{top:760px}
+#endcode div{display:inline-block;background:#0f2a22;border:6px dashed #3be0a8;border-radius:40px;padding:50px 54px;box-shadow:0 0 90px rgba(59,224,168,.28)}
+#endcode span{font-weight:800;font-size:64px;font-weight:700;color:#cfeee2;display:block;margin-bottom:6px}
+#endcode b{font-family:'DejaVu Sans Mono',monospace;font-size:170px;letter-spacing:.14em;color:#ffd60a;display:block}
+#endrules{top:1150px;font-size:54px;font-weight:700;padding:0 90px;line-height:1.25}
+#endnote{top:1330px;font-size:34px;color:#8f98a6;padding:0 120px;line-height:1.4}
+#sub{position:absolute;left:0;width:1080px;top:1585px;text-align:center;padding:0 50px;z-index:90}
+#sub div{display:inline-block;background:rgba(0,0,0,.62);border-radius:36px;padding:22px 40px;font-family:'Noto Sans Devanagari','Noto Sans',sans-serif;font-weight:800;font-size:62px;line-height:1.4;text-shadow:0 3px 10px rgba(0,0,0,.6)}
+#sub em{font-style:normal;color:#ffd60a}
+#ctl{position:fixed;left:10px;bottom:10px;z-index:999;display:flex;gap:10px;align-items:center;background:#000a;padding:8px 12px;border-radius:10px;font:14px sans-serif}
+</style></head><body>
+<div id="fit"><div id="stage">
+  <div id="bg"></div><div id="bars"></div>
+  <div id="logo"><span class="logo">n<i></i>isy</span></div>
+  <div class="hook" id="hook1">New to<br>Noisy.la?</div>
+  <div class="hook" id="hook2">Here’s how to get started</div>
+  <div id="tag">Step-by-step guide</div>
+  <div id="chip"><span><b id="chipn">1</b><em id="chipt" style="font-style:normal"></em></span></div>
+
+  <div id="phone"><div id="screen"><div id="cam">
+    <div id="bar"><div id="pill"><span id="url"></span><u id="urlph">Search or type URL</u></div>
+      <span class="ic" style="left:36px">&#8962;</span><span class="ic" style="left:668px">+</span><span class="ic" style="left:760px">&#9635;</span><span class="ic" style="left:858px">&#8942;</span></div>
+    <div id="load"></div>
+    <div id="page">
+      <!-- HOME (logged out) -->
+      <div class="pg" id="pHome">
+        <div class="hdr"><div class="burger"></div><span class="logo">n<i></i>isy</span>
+          <div class="btn" style="left:626px;top:20px;width:126px;height:68px;line-height:64px;font-size:28px">Log in</div>
+          <div class="btn g" style="left:766px;top:22px;width:128px;height:64px;line-height:62px;font-size:28px">Sign up</div></div>
+        <h1 class="t">Submit a post</h1><div class="sub">Pick a song, post a video, get paid per view.</div>
+        <div class="hr" style="top:232px"></div>
+        <div style="position:absolute;left:50px;top:262px;font-size:42px;font-weight:700">Available <span style="font-size:22px;background:#33353d;border-radius:20px;padding:6px 14px;vertical-align:middle;margin-left:8px;color:#aaa">13</span></div>
+        <div style="position:absolute;left:22px;top:318px;width:290px;height:4px;background:#3be0a8;border-radius:3px"></div>
+        <div class="btn" style="left:650px;top:256px;width:252px;height:60px;line-height:56px;font-size:26px">How Noisy works</div>
+        <div class="inp" style="left:22px;top:352px;right:auto;width:445px;height:62px;line-height:62px;background:#1b1c21;font-size:26px">&#9906;&nbsp; Search…</div>
+        <div style="position:absolute;left:503px;top:366px;font-size:27px;color:#c9ccd5;font-weight:500">Highest pay per 1k views ⌵</div>
+        <div class="card" style="top:430px"><div class="th" style="background:linear-gradient(135deg,#6b4a2a,#2a1a10)"></div><h3>crushing</h3><div class="ar">unrealgrave · Alternative</div><div class="pr">$2.25 <small>per 1k views</small></div><div class="lf">$17 <small>left</small></div><div class="pb"><i style="width:9%"></i></div><div class="mx">Max $50/video</div><div class="bs">Boosted from $1.50</div><span class="tag" style="left:404px;top:14px;background:#183a30;color:#36d39b;display:none"></span></div>
+        <div class="card" style="top:670px"><div class="th" style="background:linear-gradient(135deg,#111,#2a1d14)"></div><h3>she hates me</h3><div class="ar">stayalone · Alternative</div><div class="pr">$1.90 <small>per 1k views</small></div><div class="lf">$250 <small>left</small></div><div class="pb"><i style="width:100%"></i></div><div class="mx">Max $50/video</div><div class="bs">Boosted from $1.25</div></div>
+        <div class="card" style="top:910px"><div class="th" style="background:linear-gradient(135deg,#e9e9e9,#bdbdbd)"></div><h3>living purpose</h3><div class="ar">distantiate &amp; Grimsies · Alternative</div><div class="pr">$1.90 <small>per 1k views</small></div><div class="lf">$250 <small>left</small></div><div class="pb"><i style="width:100%"></i></div><div class="mx">Max $50/video</div><div class="bs">Boosted from $1.25</div></div>
+        <div class="card" style="top:1150px"><div class="th" style="background:linear-gradient(135deg,#222,#777)"></div><h3>lol lmao (feat. ll4zrz)</h3><div class="ar">FITH · Alternative</div><div class="pr">$1.90 <small>per 1k views</small></div><div class="lf">$300 <small>left</small></div><div class="pb"><i style="width:100%"></i></div><div class="mx">Max $50/video</div><div class="bs">Boosted from $1.25</div></div>
+      </div>
+      <!-- DASHBOARD (logged in) -->
+      <div class="pg" id="pDash">
+        <div class="hdr"><div class="burger"></div><span class="logo">n<i></i>isy</span><div class="btn" style="left:553px;top:20px;width:252px;height:66px;line-height:62px;font-size:27px">How Noisy works</div></div>
+        <div style="position:absolute;left:22px;top:128px;font-size:24px;color:#aeb2bd">Balance</div>
+        <div style="position:absolute;left:22px;top:150px;font-size:60px;font-weight:700;color:#2fe0a0">$0.00</div>
+        <div class="btn" style="left:664px;top:130px;width:96px;height:50px;line-height:48px;font-size:23px;color:#e5a62b;background:#3a2c18;border:0">Go Pro</div>
+        <div class="btn" style="left:778px;top:130px;width:122px;height:50px;line-height:48px;font-size:23px;color:#36d39b;background:#173126;border:0">Withdraw</div>
+        <div class="card" style="top:232px;height:300px;background:#1b1c21"><div style="position:absolute;left:40px;top:40px;font-size:34px;font-weight:700">Get set up to earn</div>
+          <div style="position:absolute;left:40px;top:116px;font-size:30px;font-weight:600">Link your TikTok account</div>
+          <div style="position:absolute;left:40px;top:160px;font-size:25px;color:#aeb2bd">Log in with TikTok to prove it's yours.</div>
+          <div class="btn g" style="left:40px;top:210px;width:262px;height:56px;line-height:54px;font-size:26px">Connect TikTok</div></div>
+        <div style="position:absolute;left:50px;top:600px;font-size:42px;font-weight:700">Available</div>
+        <div style="position:absolute;left:22px;top:660px;width:290px;height:4px;background:#3be0a8"></div>
+        <div style="position:absolute;left:362px;top:600px;font-size:42px;font-weight:700;color:#8d93a0">Submissions</div>
+        <div class="card" style="top:720px"><div class="th" style="background:linear-gradient(135deg,#6b4a2a,#2a1a10)"></div><h3>crushing</h3><div class="ar">unrealgrave · Alternative</div><div class="pr">$2.25 <small>per 1k views</small></div><div class="lf">$17 <small>left</small></div><div class="pb"><i style="width:9%"></i></div><div class="mx">Max $50/video</div></div>
+        <div class="card" style="top:960px"><div class="th" style="background:linear-gradient(135deg,#e9e9e9,#bdbdbd)"></div><h3>living purpose</h3><div class="ar">distantiate &amp; Grimsies · Alternative</div><div class="pr">$1.90 <small>per 1k views</small></div><div class="lf">$250 <small>left</small></div><div class="pb"><i style="width:100%"></i></div><div class="mx">Max $50/video</div></div>
+      </div>
+      <!-- REFERRALS -->
+      <div class="pg" id="pRef">
+        <div class="hdr"><div class="burger"></div><span class="logo">n<i></i>isy</span></div>
+        <div style="position:absolute;left:0;width:923px;top:128px;text-align:center"><span style="display:inline-block;background:#173a2f;color:#36d39b;font-size:24px;font-weight:600;padding:10px 22px;border-radius:30px">&#9786; Referral program</span></div>
+        <div style="position:absolute;left:0;width:923px;top:186px;text-align:center;font-size:60px;font-weight:800">Bring a creator, earn $1</div>
+        <div style="position:absolute;left:20px;width:883px;top:278px;text-align:center;font-size:27px;line-height:42px;font-weight:600;color:#bfc3cd">They get $1 the moment they sign up with your code. You get $1 once their first video is approved.</div>
+        <div class="card" id="askcard" style="top:400px;height:215px;background:#2b2c33;border:2px solid #3b3d46"><div style="position:absolute;left:26px;top:22px;font-size:32px;font-weight:600">Did someone refer you?</div>
+          <div style="position:absolute;left:26px;top:74px;font-size:27px;color:#bfc3cd;font-weight:600">Add their code and you'll both get your bonus.</div>
+          <div class="btn" id="addbtn" style="left:26px;top:120px;width:300px;height:64px;line-height:60px;font-size:28px">Add referral code</div></div>
+        <div class="card" id="okcard" style="top:400px;height:130px;background:#16352b;border:2px solid #2a8a64;opacity:0"><div style="position:absolute;left:26px;top:22px;width:830px;font-size:27px;line-height:42px;font-weight:600;color:#36d39b">&#10003;&nbsp; You were referred by H**al P** (code MSHRJU). Your $1 sign-up bonus has been added to your balance.</div></div>
+        <div class="card" style="top:650px;height:400px;background:#2b2c33;border:2px solid #3b3d46"><div style="position:absolute;left:40px;top:40px;font-size:28px;color:#aeb2bd">Your referral code</div>
+          <div style="position:absolute;left:40px;top:84px;font-size:27px;font-weight:600;color:#d8dbe3">Earn $1 per creator that uses your code and posts.</div>
+          <div style="position:absolute;left:40px;top:146px;width:800px;height:200px;border:3px dashed #2a8a64;border-radius:26px;background:#2f3a3b"><div style="position:absolute;left:28px;top:36px;font-family:'DejaVu Sans Mono',monospace;font-size:62px;letter-spacing:.2em;color:#2fe0a0">••••••</div>
+            <div class="btn" style="left:28px;top:120px;width:150px;height:54px;line-height:50px;font-size:26px">Copy</div><div class="btn" style="left:192px;top:120px;width:200px;height:54px;line-height:50px;font-size:26px">Copy link</div><div class="btn" style="left:406px;top:120px;width:150px;height:54px;line-height:50px;font-size:26px">Share</div></div></div>
+      </div>
+      <div class="dim" id="dim"></div>
+      <!-- SIGN UP SHEET -->
+      <div id="sheet"><div class="grab"></div>
+        <div class="sh-t" style="top:34px">Sign Up</div><div class="sh-s" style="top:92px">Create your account and start earning</div>
+        <div class="lab" style="top:146px">Email</div><div class="inp" style="top:182px">Enter your email</div>
+        <div class="lab" style="top:262px">Password</div><div class="inp" style="top:298px">Create a password (min. 8 characters)</div>
+        <div class="lab" style="top:378px">Confirm Password</div><div class="inp" style="top:414px">Confirm your password</div>
+        <div style="position:absolute;left:0;right:0;top:508px;text-align:center;font-size:32px;font-weight:600">Create Account</div>
+        <div class="line" style="top:602px;right:auto;width:290px"></div><div style="position:absolute;left:0;right:0;top:582px;text-align:center;font-size:27px;font-weight:700">Or continue with</div><div class="line" style="top:602px;left:auto;width:290px"></div>
+        <div style="position:absolute;left:150px;top:650px;font-size:32px;font-weight:600"><b style="font-size:40px;margin-right:14px">G</b>Google</div>
+        <div style="position:absolute;left:560px;top:650px;font-size:32px;font-weight:600"><b style="margin-right:14px">&#9673;</b>Discord</div>
+        <div style="position:absolute;left:0;right:0;top:740px;text-align:center;font-size:27px;font-weight:600">Already have an account? <u>Sign in</u></div></div>
+      <!-- SIDEBAR -->
+      <div class="dim" id="dim2" style="z-index:25"></div>
+      <div id="side"><span class="logo">n<i></i>isy</span>
+        <div class="me">Your account<b>$0.00</b><span>View profile →</span></div>
+        <div class="mi" style="top:270px">Home</div><div class="mi" style="top:362px">Withdraw</div><div class="mi" style="top:454px">Leaderboard</div><div class="mi" style="top:546px">For Artists</div><div class="mi" style="top:638px">FAQ</div>
+        <div class="mi" id="miRef" style="top:730px">Referrals</div><div class="mi" style="top:822px">Support</div><div class="mi" style="top:914px">Settings</div></div>
+      <!-- MODAL -->
+      <div class="dim" id="dim3" style="z-index:18"></div>
+      <div id="modal"><div class="grab"></div>
+        <div class="sh-t" style="top:34px;font-size:38px">Enter Referral Code</div><div style="position:absolute;right:30px;top:34px;font-size:46px;color:#bbb">&times;</div>
+        <div class="lab" style="top:128px">Referral Code</div>
+        <div class="inp" style="top:168px;height:78px;line-height:74px;border:3px solid #fff;background:#25262d;color:#fff;font-weight:700;font-size:32px"><span id="typed"></span><span id="caret" style="display:inline-block;width:3px;height:36px;background:#fff;vertical-align:middle;margin-left:3px"></span></div>
+        <div style="position:absolute;left:24px;top:262px;font-size:26px;font-weight:600;color:#bfc3cd">Enter the referral code of the creator who referred you</div>
+        <div class="btn" style="left:24px;top:330px;width:120px;height:62px;line-height:58px;font-size:28px">Cancel</div>
+        <div class="btn" id="addref" style="left:166px;top:330px;width:186px;height:62px;line-height:58px;font-size:28px">Add Referrer</div></div>
+    </div>
+    <!-- overlay layer in cam coords -->
+    <div id="rings"></div><div id="rips"></div><div id="cursor"></div>
+  </div></div></div>
+
+  <div id="codebadge"><div><small>Referral Code</small><b>MSHRJU</b></div></div>
+  <div id="end"><div id="endbg"></div>
+    <div class="c" id="endlogo"><span class="logo">n<i></i>isy</span></div>
+    <div class="c" id="endurl">noisy.la</div>
+    <div class="c" id="endcode"><div style="padding:60px 56px"><span style="font-size:76px;margin:0;white-space:nowrap">Referral Code: <b style="display:inline;font-size:76px;letter-spacing:.08em;color:#ffd60a">MSHRJU</b></span></div></div>
+    <div class="c" id="endrules">Check the campaign rules before participating.</div>
+    <div class="c" id="endnote">Rewards are set by Noisy and may change. Earnings are not guaranteed. Not affiliated with or endorsed by Noisy.</div>
+  </div>
+  <div id="sub"><div id="subt"></div></div>
+</div></div>
+<div id="ctl"><button id="pp">Play</button><input id="sc" type="range" min="0" max="45" step="0.01" value="0" style="width:400px"><span id="tt">0.0</span>
+ <audio id="music" src="assets/music_sfx.wav" preload="auto"></audio><audio id="vo" src="assets/voiceover.mp3" preload="auto"></audio></div>
+<script>
+const DUR=45;
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const ease=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eo=x=>1-Math.pow(1-x,3);
+const trap=(t,a,b,c,d)=>ease(seg(t,a,b))*(1-ease(seg(t,c,d)));
+const lerp=(a,b,k)=>a+(b-a)*k;
+
+/* ---- timeline data (keep in sync with make_audio.py) ---- */
+const CHIPS=[[5.0,10,1,'Open Noisy.la'],[10,17,2,'Sign up or log in'],[17,25,3,'Open Referrals'],[25,33,4,'Add the code']];
+const SUBS=[
+ [.4,2.6,'<em>Noisy.la</em> हेर्न चाहनुहुन्छ?'],[2.6,5.0,'सुरु गर्ने सजिलो गाइड यहाँ छ।'],
+ [5.3,7.4,'<em>Noisy.la</em> खोल्नुहोस्।'],[7.4,9.9,'माथि <em>Log in</em> र <em>Sign up</em> देखिन्छ।'],
+ [10.3,12.6,'<em>Sign up</em> थिच्नुहोस्।'],[12.6,14.6,'इमेल र पासवर्ड प्रयोग गर्नुहोस्,'],[14.6,16.9,'वा <em>Google / Discord</em> बाट जारी राख्नुहोस्।'],
+ [17.3,20.0,'लगइनपछि मेनु खोलेर <em>Referrals</em> थिच्नुहोस्।'],[20.0,24.9,'<em>Add referral code</em> थिच्नुहोस्।'],
+ [25.3,28.8,'कोड <em>MSHRJU</em> टाइप गर्नुहोस्,'],[28.8,30.2,'अनि <em>Add Referrer</em> थिच्नुहोस्।'],[30.2,32.9,'स्वीकार भए Noisy ले पुष्टि सन्देश देखाउँछ।'],
+ [34.0,38.5,'<em>Noisy.la</em> मा जानुहोस् र चरणहरू पालना गर्नुहोस्।'],[38.5,43.8,'सहभागी हुनुअघि अभियानका नियम अवश्य जाँच्नुहोस्।']];
+const CAM=[[0,1,461,765],[6.6,1,461,765],[7.2,1.55,700,190],[9.8,1.55,700,190],[10.4,1,461,765],[11.2,1.06,461,1000],[15.0,1.06,461,1150],[16.8,1,461,900],
+ [17.6,1,461,765],[20.9,1,461,765],[21.7,1.05,461,640],[25.0,1.05,461,640],[26.0,1.1,461,880],[29.8,1.1,461,880],[30.4,1.05,461,560],[32.8,1.05,461,560],[33.4,1,461,765]];
+const CUR=[[5.0,600,700],[5.55,350,50],[6.6,350,50],[7.4,760,260],[10.1,760,260],[10.5,830,154],[11.6,830,154],[12.2,460,908],[13.2,460,1023],[14.2,460,1200],[15.5,300,1352],[16.6,300,1352],[17.1,700,900],
+ [18.2,45,154],[19.0,45,154],[19.7,200,876],[20.3,200,876],[21.2,520,660],[25.2,520,660],[25.8,170,662],[26.4,600,800],[29.0,600,800],[29.4,330,931],[30.2,640,1100]];
+const TAPS=[[5.6,350,50],[10.5,830,154],[18.5,45,154],[20.2,200,876],[25.8,170,662],[29.4,330,931]];
+const RINGS=[[7.3,9.8,620,122,280,64],[12.0,13.0,40,877,840,70],[13.1,14.1,40,992,840,70],[14.2,15.2,40,1170,840,72],[15.3,16.7,40,1322,840,70],[19.2,20.2,15,830,402,92],[21.7,25.6,16,498,892,222],[30.4,32.8,16,498,892,138]];
+const MAT=(a,k)=>{for(let i=0;i<a.length-1;i++){if(k>=a[i][0]&&k<=a[i+1][0]){const e=ease(seg(k,a[i][0],a[i+1][0]));return a[i].map((v,j)=>j?lerp(v,a[i+1][j],e):k)}}return k<a[0][0]?a[0]:a[a.length-1]};
+
+/* ---- build dynamic bits ---- */
+const bars=$('bars');for(let i=0;i<40;i++){bars.appendChild(document.createElement('i'))}
+const ringEls=RINGS.map(r=>{const d=document.createElement('div');d.className='ring';d.style.cssText=`left:${r[2]}px;top:${r[3]}px;width:${r[4]}px;height:${r[5]}px`;$('rings').appendChild(d);return d});
+const ripEls=TAPS.map(r=>{const d=document.createElement('div');d.className='rip';d.style.left=r[1]+'px';d.style.top=r[2]+'px';$('rips').appendChild(d);return d});
+$('endbg').appendChild($('pHome').cloneNode(true)); // website shown again behind the end card
+const ec=$('endbg').firstChild;ec.style.cssText='position:absolute;left:0;top:0;width:923px;height:1430px;transform:scale(1.5);transform-origin:0 0';
+$('endbg').style.cssText+=';width:1385px;height:2145px;left:-150px;top:0;transform:none';
+
+const CODE='MSHRJU';
+function render(t){
+  /* background bars */
+  [...bars.children].forEach((b,i)=>{b.style.height=(60+Math.abs(Math.sin(t*2.2+i*.55))*260*(.5+.5*Math.sin(i*.3+t)))+'px'});
+  /* logo: big centre -> small top */
+  const lm=ease(seg(t,4.1,5.0)), lo=1-seg(t,33.0,33.4);
+  const ly=lerp(560,60,lm), ls=lerp(1.9,.62,lm);
+  $('logo').style.top=ly+'px';$('logo').style.transform=`scale(${ls})`;
+  $('logo').style.opacity=(t<.15?seg(t,0,.5):1)*lo;
+  const lpop=eo(seg(t,0,.6));if(t<4.1)$('logo').style.transform=`scale(${ls*(.6+.4*lpop)})`;
+  /* hook */
+  const h1=eo(seg(t,.3,.9))*(1-seg(t,4.2,4.8));
+  $('hook1').style.opacity=h1;$('hook1').style.transform=`translateY(${(1-eo(seg(t,.3,.9)))*60}px) scale(${1+.03*seg(t,.3,4)})`;
+  const h2=eo(seg(t,2.2,2.8))*(1-seg(t,4.2,4.8));
+  $('hook2').style.opacity=h2;$('hook2').style.transform=`translateY(${(1-eo(seg(t,2.2,2.8)))*40}px)`;
+  $('tag').style.opacity=eo(seg(t,1.2,1.8))*(1-seg(t,4.2,4.7));
+  /* chip */
+  let ch=null;CHIPS.forEach(c=>{if(t>=c[0]&&t<c[1])ch=c});
+  if(ch){$('chipn').textContent=ch[2];$('chipt').textContent=ch[3];const k=eo(seg(t,ch[0],ch[0]+.4))*(1-seg(t,ch[1]-.3,ch[1]));$('chip').style.opacity=k;$('chip').style.transform=`translateY(${(1-eo(seg(t,ch[0],ch[0]+.4)))*30}px)`}else $('chip').style.opacity=0;
+  /* phone */
+  const pin=eo(seg(t,4.5,5.5)), pout=ease(seg(t,33.0,33.9));
+  $('phone').style.opacity=(t>=4.5&&t<33.95)?1:0;
+  $('phone').style.transform=`translateY(${(1-pin)*1500+pout*1500}px) scale(${.92+.08*pin})`;
+  /* camera */
+  const c=MAT(CAM,t);const s=c[1];let tx=461.5-c[2]*s,ty=765-c[3]*s;tx=clamp(tx,923-923*s,0);ty=clamp(ty,1530-1530*s,0);
+  $('cam').style.transform=`translate(${tx}px,${ty}px) scale(${s})`;
+  /* url bar + loading */
+  const typed='noisy.la';const n=Math.floor(clamp((t-5.7)/.7)*typed.length);
+  let url=n?typed.slice(0,n):'';if(t>=20.5)url='noisy.la/referrals';
+  $('url').innerHTML=url?('<span style="color:#fff">🔒 '+url.replace(/\/.*/,'')+'</span><span style="color:#8d93a0">'+(url.includes('/')?url.slice(url.indexOf('/')):'')+'</span>'):'';
+  $('urlph').style.display=url?'none':'inline';
+  const ld=(t>6.4&&t<7.0)?seg(t,6.4,7.0):(t>20.45&&t<20.9)?seg(t,20.45,20.9):0;$('load').style.width=(ld*923)+'px';$('load').style.opacity=ld>0&&ld<1?1:0;
+  /* pages */
+  $('pHome').style.opacity=t<5.0?0:(t<6.6?0:ease(seg(t,6.4,6.9)));
+  $('pDash').style.opacity=trap(t,17.0,17.8,20.45,20.5);
+  $('pRef').style.opacity=ease(seg(t,20.45,20.85));
+  /* sheet */
+  const shIn=ease(seg(t,10.7,11.5)), shOut=ease(seg(t,17.0,17.6));
+  $('sheet').style.transform=`translateY(${(1-shIn+shOut)*110}%)`;
+  $('dim').style.opacity=.62*(shIn*(1-shOut));
+  /* sidebar */
+  const sIn=ease(seg(t,18.6,19.1)), sOut=ease(seg(t,20.5,20.95));
+  $('side').style.transform=`translateX(${-(1-sIn+sOut)*440}px)`;
+  $('dim2').style.opacity=.6*(sIn*(1-sOut));
+  $('miRef').style.background=(t>19.2&&t<20.6)?'#3b3d46':'transparent';
+  /* modal + typing */
+  const mIn=ease(seg(t,25.9,26.5)), mOut=ease(seg(t,29.8,30.3));
+  $('modal').style.transform=`translateY(${(1-mIn+mOut)*110}%)`;
+  $('dim3').style.opacity=.6*(mIn*(1-mOut));
+  const tc=Math.floor(clamp((t-26.8)/(.27*6),0,1)*6+ (t>=26.8?0.0001:0));
+  $('typed').textContent=CODE.slice(0,t>=26.8?Math.min(6,Math.floor((t-26.8)/.27)+1):0);
+  $('caret').style.opacity=(Math.floor(t*2)%2==0)?1:0;
+  /* referral banner */
+  const bn=ease(seg(t,30.2,30.8));$('askcard').style.opacity=1-ease(seg(t,29.9,30.4));$('okcard').style.opacity=bn;$('okcard').style.transform=`translateY(${(1-bn)*-14}px)`;
+  const pr=(t>25.8&&t<26.1)?1:0;
+  /* rings */
+  RINGS.forEach((r,i)=>{const k=trap(t,r[0],r[0]+.3,r[1]-.25,r[1]);ringEls[i].style.opacity=k;ringEls[i].style.transform=`scale(${1+.025*Math.sin(t*8)})`});
+  /* cursor + taps */
+  const cu=MAT(CUR,t);$('cursor').style.left=cu[1]+'px';$('cursor').style.top=cu[2]+'px';
+  let press=1;TAPS.forEach(tp=>{const d=t-tp[0];if(d>-.1&&d<.2)press=.78});
+  $('cursor').style.transform=`scale(${press})`;
+  $('cursor').style.opacity=seg(t,5.0,5.4)*(1-seg(t,30.8,31.4));
+  TAPS.forEach((tp,i)=>{const d=(t-tp[0])/.6;const e=d>0&&d<1;ripEls[i].style.opacity=e?(1-d):0;ripEls[i].style.transform=`scale(${1+d*3.2})`});
+  /* code badge (float) */
+  $('codebadge').style.opacity=trap(t,22.0,22.6,32.6,33.1);
+  $('codebadge').style.transform=`translateY(${(1-eo(seg(t,22.0,22.6)))*40}px)`;
+  /* end card */
+  const en=ease(seg(t,33.6,34.4));$('end').style.opacity=en;
+  $('endlogo').style.opacity=eo(seg(t,33.8,34.5));$('endlogo').style.transform=`scale(${.8+.2*eo(seg(t,33.8,34.6))})`;
+  $('endurl').style.opacity=eo(seg(t,34.4,35.0));$('endurl').style.transform=`translateY(${(1-eo(seg(t,34.4,35.0)))*30}px)`;
+  const ecode=eo(seg(t,35.0,35.8));$('endcode').style.opacity=ecode;$('endcode').style.transform=`scale(${.85+.15*ecode+.012*Math.sin(t*3)})`;
+  $('endrules').style.opacity=eo(seg(t,38.0,38.8));$('endrules').style.transform=`translateY(${(1-eo(seg(t,38.0,38.8)))*30}px)`;
+  $('endnote').style.opacity=eo(seg(t,39.5,40.3));
+  $('endbg').style.transform=`scale(${1+.04*seg(t,33,45)})`;
+  /* subtitles */
+  let sb=null;SUBS.forEach(s=>{if(t>=s[0]&&t<s[1])sb=s});
+  if(sb){$('subt').innerHTML=sb[2];const k=eo(seg(t,sb[0],sb[0]+.2))*(1-seg(t,sb[1]-.12,sb[1]));$('sub').style.opacity=k;$('sub').style.transform=`scale(${.94+.06*eo(seg(t,sb[0],sb[0]+.2))})`}else $('sub').style.opacity=0;
+  /* end fade-out */
+  $('stage').style.filter=t>44.4?`brightness(${1-seg(t,44.4,45)})`:'none';
+}
+window.__render=render;window.__dur=DUR;
+
+/* ---- fit-to-window + preview player ---- */
+function fit(){const k=Math.min(innerWidth/1080,innerHeight/1920);$('fit').style.transform=`scale(${k})`;$('fit').style.left=((innerWidth-1080*k)/2)+'px'}
+addEventListener('resize',fit);fit();
+const rm=/render=1/.test(location.search);
+if(rm){$('ctl').style.display='none';document.body.style.background='#000';$('fit').style.transform='none';$('fit').style.left='0'}
+let playing=false,t0=0,cur=0;const au=[$('music'),$('vo')];
+function setT(t){cur=t;render(t);$('sc').value=t;$('tt').textContent=t.toFixed(1)}
+function tick(){if(!playing)return;const t=(performance.now()-t0)/1000;if(t>=DUR){playing=false;$('pp').textContent='Play';au.forEach(a=>a.pause());setT(DUR);return}setT(t);requestAnimationFrame(tick)}
+$('pp').onclick=()=>{if(playing){playing=false;au.forEach(a=>a.pause());$('pp').textContent='Play';return}
+  if(cur>=DUR-.1)cur=0;t0=performance.now()-cur*1000;playing=true;$('pp').textContent='Pause';au.forEach(a=>{try{a.currentTime=cur;a.play().catch(()=>{})}catch(e){}});tick()};
+$('sc').oninput=e=>{playing=false;au.forEach(a=>a.pause());$('pp').textContent='Play';setT(parseFloat(e.target.value))};
+setT(0);
+</script></body></html>
